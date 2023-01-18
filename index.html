@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Jared's Porfolio</title>
+    <link rel= "stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/6fa46dd4a2.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 class=" logo">ja<span>red</span></h1>
+          <ul id="sideMenu">
+            <li><a href = "#header">Home</a></li>
+            <li><a href = "#about">About</a></li>
+            <li><a href = "#services">Services</a></li>
+            <li><a href = "#portfolio">My Works</a></li>
+            <li><a href = "#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer | Graphic Designer | Video Editor </p>
+          <h1>Hi, I'm <span>Bruce Jared Villas</span><br>from the Philippines</h1>
+        </div>
+      </div>
+    </div>
+    <!--about-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="abtcol-1">
+            <img src="img/CHOSEN_11_VILLAS_BRUCE_JARED_PUP_21098_.JPG">
+          </div>
+          <div class="abtcol-2">
+            <h1 class="sub">About Me</h1>
+            <p class="abtme">&emsp;I'm Bruce Jared Villas, 23 yrs old, fresh-graduate from Polytechnic University of the Philippines with a degree on Computer Engineering. I am an experienced designer known for minimalistic designs. I'm pursuing front-end developer as my career as it develops my creativity and also enhances my technicality in terms of coding and designing.</p>
+            <p class="abtme">&emsp;My specialty is front-end web design/development, making my own icons/logo/graphics using photoshop and using it to develop websites. However, my interests extend beyond the web I also like filming and video editing. I've made few short films as a hobby and joined a contest to submit one of my few short films.
+            <div class="tab">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('exp')">Experience & Achievements</p>
+              <p class="tab-links" onclick="opentab('educ')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br>Designs Web/App interfaces, Possess basic knowledge on HTML and CSS</li>
+                <li><span>Graphic Design</span><br>Creativity, 
+                  Knowledgeable in using Adobe Suite</li>
+                <li><span>Video Editor</span><br>High attention to detail, adaptable, flexible, and, has great technicalities</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="exp">
+              <ul>
+                <li><span>2022</span><br>&emsp;Client Success Analyst Intern at <span>Dashlabs.ai</span><br>
+                </li>
+                <li><span>2021</span><br>Attended Webinasrs and Online Courses from different companies:<br>
+                &emsp;<span>Worldbex Services International</span> - WOCEE Wired & WOSAS Wired<br>
+                &emsp;<span>DeepLearning.AI</span> - Introduction to Machine Learning in Production<br>
+                &emsp;<span>freeCodeCamp</span> - Machine Learning with Python<br>
+                &emsp;<span>Trend Micro</span> - Introduction to Careers in Cybersecurity<br>
+                &emsp;<span>Hytec Power Inc.</span> - Industry based Multi-tech E-Learning - Programmable Logic Controller</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="educ">
+              <ul>
+                <li><span>2016-2023</span><br>Polytechnic University of the Philippines<br>
+                &emsp; •STEM Strand (2016-2018)<br>
+                &emsp; •Bachelor of Science in Computer Engineering (2018-2023)</li>
+                <li><span>2012-2016</span><br>Ramon Magsaysay (Cubao) High School</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------services----->
+<div id="services">
+  <div class="container">
+    <h1 class="sub">Services</h1>
+    <div class="serviceslist">
+      <div>
+        <img src="img/UI.png">
+        <h3>UI/UX</h3>
+        <p>Made a lot of user interfaces for mobile and web app for school requirements.</p>
+        <a onclick="opnpopup1()">See more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        
+      </div>
+      <div>
+        <img src="img/image.png">
+        <h3>Graphic Designing</h3>
+        <p>Made different types of graphic designs as a hobby.</p>
+        <a onclick="opnpopup2()">See more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      
+      </div>
+      <div>
+        <img src="img/video.png">
+        <h3>Video Editing</h3>
+        <p>Made films and videographics for school projects and for fun.</p>
+        <a onclick="opnpopup3()">See more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      
+      </div>
+    </div>
+    </div>
+</div>
+<div class="popup" id="popup-1">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="closebtn" onclick="opnpopup1()">
+      &times;</div>
+  <img src="img/UI.png">
+  <h3>UI/UX</h3>
+  <p>- 1 year of experience as a UI/UX designer.</p>
+  <p>- Has knowledge in using HTML, CSS and basic knowledgein JS.</p>
+  <p>- Knowledgeable in using Adobe XD and Figma.</p>
+
+  </div>
+</div>
+<div class="popup" id="popup-2">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="closebtn" onclick="opnpopup2()">
+      &times;</div>
+  <img src="img/image.png">
+  <h3>Graphic Design</h3>
+  <p>- 4 years of experience as a designer.</p>
+  <p>- Specializing in logo design, posters and shirt design.</p>
+  <p>- Knowledgeable in using Adobe Photoshop.</p>
+
+  </div>
+</div>
+<div class="popup" id="popup-3">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="closebtn" onclick="opnpopup3()">
+      &times;</div>
+  <img src="img/image.png">
+  <h3>Video Edit</h3>
+  <p>- 4 years of experience as a video editor.</p>
+  <p>- Specializing in film making and montages.</p>
+  <p>- Knowledgeable in using Adobe Premiere Pro.</p>
+  </div>
+</div>
+
+<!----portfolio--->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub">My Works</h1>
+    <div class="worklist">
+      <div class="work">
+        <img src="img/UI-UX-Design-1024x576.png">
+        <a href="https://drive.google.com/drive/u/5/folders/1htE5OvMG30g9rAj7QqOgBigloLnjUWiQ" target="_blank">
+        <div class="layer">
+          <h3>UI/UX Designs</h3>
+          <p>See my works by clicking the picture.</p>
+        </div></a>
+      </div>
+      <div class="work">
+        <a href="https://drive.google.com/drive/u/5/folders/1EEnY_StRP_cNZKKf_J6WF8EF9h7ZbuSI" target="_blank">
+          <img src="img/Picture1_8.png">
+        <div class="layer">
+          <h3>Graphic Designs</h3>
+          <p>See my works by clicking the picture.</p>
+        </div></a>
+      </div>
+      <div class="work">
+        <a href="https://drive.google.com/drive/u/5/folders/1zf-ftuaVpxMyshLHdjdg9sKWiyNUJPOs" target="_blank">
+          <img src="img/Video-Editing-Software.jpg">
+        <div class="layer">
+          <h3>Video Edits</h3>
+          <p>See my works by clicking the picture.</p>
+        </div></a>
+      </div>
+    </div>
+    <a href="https://drive.google.com/drive/u/5/folders/1k9i451QnorGcOJzVxszhuqRCCC81liQQ" class="btn" target="_blank">See all</a>
+  </div>
+</div>
+
+<!-----------------contacts---------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub">Contacts</h1>
+        <p><i class="fa-solid fa-envelope"></i>  jaredvbusiness@gmail.com</p>
+         <p> <i class="fa-solid fa-envelope"></i>  vbrucejared07@gmail.com</p>
+        <p class="phimg"><i class="fa-solid fa-phone"></i>+639369161383<img src="img/197561.png"></p>
+        <div class="socials">
+          <a href="https://www.facebook.com/viluce.red"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.instagram.com/viluce.red/"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/brucejaredvillas-10aa77219"><i class="fa-brands fa-linkedin"></i></a>        
+        </div>
+      <a href="img/Bruce Jared B. Villas - Resume.pdf" download class="btn btn3">Download Resume</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="E-mail" placeholder="Your E-mail" required>
+          <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="ending">
+    <p>Made by Jared V. For myself ♥</p>
+  </div>
+ </div>
+
+    <script>
+      var sideMenu =document.getElementById("sideMenu")
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+      function openMenu(){
+        sideMenu.style.right="0";
+      }
+      function closeMenu(){
+        sideMenu.style.right="-200px";
+      }
+      
+       </script>
+       <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyrYkwjWFtPiwjZPwLF6QykE1K5ZZJPS63ZAXjHWClyEUB7fkJCq-UQb2ELC0NP2Kr-/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msg.innerHTML = "Message submitted!♥"
+              setTimeout(function(){
+                msg.innerHTML = ""
+              },5000) 
+              form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+<script>
+  function opnpopup1(){
+    document.getElementById("popup-1").classList.toggle("active");
+  }
+  function opnpopup2(){
+    document.getElementById("popup-2").classList.toggle("active");
+  }
+  function opnpopup3(){
+    document.getElementById("popup-3").classList.toggle("active");
+  }
+</script>
+
+  </body>
+</html>
