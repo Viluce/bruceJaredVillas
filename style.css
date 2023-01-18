@@ -444,6 +444,12 @@ nav .fa-solid{
 .sub{
   font-size: 35px;
 }
+.popup .content{
+  width: 250px;
+}
+.popup .closebtn{
+  padding: 7%;
+}
 #services, #portfolio{
   padding: 0px;
 }
